@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일\ITEM">
+      <UniqueIdentifier>{55a55953-43de-4b0b-be62-68173ad21788}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\BACKGROUND">
+      <UniqueIdentifier>{4020c62c-36ec-4899-839a-3ccc9dce59f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\CHARACTER">
+      <UniqueIdentifier>{ac6b88e1-5c6a-4042-97e5-21d999c985ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\CHARACTER\FLOG">
+      <UniqueIdentifier>{3cd15695-08b0-4293-84ca-b9c5751a5801}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\CHARACTER\HUNTER">
+      <UniqueIdentifier>{eb6a42e1-db59-481f-9426-fecc28545f39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\GAMEINFO">
+      <UniqueIdentifier>{26d2c9cf-e803-48d2-b352-0f5b16841d2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\OBJECT_LINE">
+      <UniqueIdentifier>{eb653619-7084-4290-a7df-3ef7db6625f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\OBJECT_LINE\WOOD">
+      <UniqueIdentifier>{7e59338d-8f88-4817-a3af-ed9e92cfe7ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\OBJECT_LINE\CAR">
+      <UniqueIdentifier>{f8260eda-26da-4e1d-8675-f1a0b59b9dd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\OBJECT_LINE\TUTTLE">
+      <UniqueIdentifier>{baa0fc2e-94ca-482e-8886-62c5ec3be0c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\CHARACTER\GHOST">
+      <UniqueIdentifier>{dd4cacd1-1c0f-46a4-be34-f391632b444b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseLib.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="List_bmp.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage_Line.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Math.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCharacter.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSound.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GameTime.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_DataManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_Item.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RoadEscape.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resource\car 리소스 4.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\CAR</Filter>
+    </Image>
+    <Image Include="Resource\car 리소스2.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\CAR</Filter>
+    </Image>
+    <Image Include="Resource\car 리소스3.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\CAR</Filter>
+    </Image>
+    <Image Include="Resource\car 리소스5.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\CAR</Filter>
+    </Image>
+    <Image Include="Resource\car리소스1.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\CAR</Filter>
+    </Image>
+    <Image Include="Resource\TuttleFrame0.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\TUTTLE</Filter>
+    </Image>
+    <Image Include="Resource\TuttleFrame0_R.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\TUTTLE</Filter>
+    </Image>
+    <Image Include="Resource\TuttleFrame1.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\TUTTLE</Filter>
+    </Image>
+    <Image Include="Resource\TuttleFrame1_R.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\TUTTLE</Filter>
+    </Image>
+    <Image Include="Resource\TuttleFrame2.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\TUTTLE</Filter>
+    </Image>
+    <Image Include="Resource\TuttleFrame2_R.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\TUTTLE</Filter>
+    </Image>
+    <Image Include="Resource\TuttleFrame3.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\TUTTLE</Filter>
+    </Image>
+    <Image Include="Resource\TuttleFrame3_R.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\TUTTLE</Filter>
+    </Image>
+    <Image Include="Resource\TuttleFrame4.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\TUTTLE</Filter>
+    </Image>
+    <Image Include="Resource\TuttleFrame4_R.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\TUTTLE</Filter>
+    </Image>
+    <Image Include="Resource\TuttleFrame5.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\TUTTLE</Filter>
+    </Image>
+    <Image Include="Resource\TuttleFrame5_R.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\TUTTLE</Filter>
+    </Image>
+    <Image Include="Resource\TuttleFrame6.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\TUTTLE</Filter>
+    </Image>
+    <Image Include="Resource\TuttleFrame6_R.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\TUTTLE</Filter>
+    </Image>
+    <Image Include="Resource\TuttleFrame7.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\TUTTLE</Filter>
+    </Image>
+    <Image Include="Resource\TuttleFrame7_R.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\TUTTLE</Filter>
+    </Image>
+    <Image Include="Resource\TuttleFrame8.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\TUTTLE</Filter>
+    </Image>
+    <Image Include="Resource\TuttleFrame8_R.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\TUTTLE</Filter>
+    </Image>
+    <Image Include="Resource\TuttleFrame10.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\TUTTLE</Filter>
+    </Image>
+    <Image Include="Resource\TuttleFrame10_R.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\TUTTLE</Filter>
+    </Image>
+    <Image Include="Resource\TuttleFrame11.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\TUTTLE</Filter>
+    </Image>
+    <Image Include="Resource\TuttleFrame11_R.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\TUTTLE</Filter>
+    </Image>
+    <Image Include="Resource\개구리 점프 상 1.bmp">
+      <Filter>리소스 파일\CHARACTER\FLOG</Filter>
+    </Image>
+    <Image Include="Resource\개구리 점프 상 3.bmp">
+      <Filter>리소스 파일\CHARACTER\FLOG</Filter>
+    </Image>
+    <Image Include="Resource\개구리 점프 상2.bmp">
+      <Filter>리소스 파일\CHARACTER\FLOG</Filter>
+    </Image>
+    <Image Include="Resource\개구리 점프 우.bmp">
+      <Filter>리소스 파일\CHARACTER\FLOG</Filter>
+    </Image>
+    <Image Include="Resource\개구리 점프 좌 1.bmp">
+      <Filter>리소스 파일\CHARACTER\FLOG</Filter>
+    </Image>
+    <Image Include="Resource\개구리 점프 좌2.bmp">
+      <Filter>리소스 파일\CHARACTER\FLOG</Filter>
+    </Image>
+    <Image Include="Resource\개구리 점프 좌3.bmp">
+      <Filter>리소스 파일\CHARACTER\FLOG</Filter>
+    </Image>
+    <Image Include="Resource\개구리 점프 하 3.bmp">
+      <Filter>리소스 파일\CHARACTER\FLOG</Filter>
+    </Image>
+    <Image Include="Resource\개구리 점프 하1.bmp">
+      <Filter>리소스 파일\CHARACTER\FLOG</Filter>
+    </Image>
+    <Image Include="Resource\개구리 점프 하2.bmp">
+      <Filter>리소스 파일\CHARACTER\FLOG</Filter>
+    </Image>
+    <Image Include="Resource\우 점프.bmp">
+      <Filter>리소스 파일\CHARACTER\FLOG</Filter>
+    </Image>
+    <Image Include="Resource\점프 하강.bmp">
+      <Filter>리소스 파일\CHARACTER\FLOG</Filter>
+    </Image>
+    <Image Include="Resource\car 리소스 4_R.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\CAR</Filter>
+    </Image>
+    <Image Include="Resource\car 리소스2_R.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\CAR</Filter>
+    </Image>
+    <Image Include="Resource\car 리소스3_R.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\CAR</Filter>
+    </Image>
+    <Image Include="Resource\car 리소스5_R.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\CAR</Filter>
+    </Image>
+    <Image Include="Resource\car리소스1_R.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\CAR</Filter>
+    </Image>
+    <Image Include="Resource\통나무_L.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\WOOD</Filter>
+    </Image>
+    <Image Include="Resource\통니무.bmp">
+      <Filter>리소스 파일\OBJECT_LINE\WOOD</Filter>
+    </Image>
+    <Image Include="Resource\apple.bmp">
+      <Filter>리소스 파일\ITEM</Filter>
+    </Image>
+    <Image Include="Resource\arrow_down.bmp">
+      <Filter>리소스 파일\ITEM</Filter>
+    </Image>
+    <Image Include="Resource\banana.bmp">
+      <Filter>리소스 파일\ITEM</Filter>
+    </Image>
+    <Image Include="Resource\cherry.bmp">
+      <Filter>리소스 파일\ITEM</Filter>
+    </Image>
+    <Image Include="Resource\spidernet.bmp">
+      <Filter>리소스 파일\ITEM</Filter>
+    </Image>
+    <Image Include="Resource\백그라운드 나머지.bmp">
+      <Filter>리소스 파일\BACKGROUND</Filter>
+    </Image>
+    <Image Include="Resource\백그라운드 하늘.bmp">
+      <Filter>리소스 파일\BACKGROUND</Filter>
+    </Image>
+    <Image Include="Resource\사냥꾼.bmp">
+      <Filter>리소스 파일\CHARACTER\HUNTER</Filter>
+    </Image>
+    <Image Include="Resource\intro1.bmp">
+      <Filter>리소스 파일\GAMEINFO</Filter>
+    </Image>
+    <Image Include="Resource\TimeBar.bmp">
+      <Filter>리소스 파일\GAMEINFO</Filter>
+    </Image>
+    <Image Include="Resource\TimeBar_Background.bmp">
+      <Filter>리소스 파일\GAMEINFO</Filter>
+    </Image>
+    <Image Include="Resource\TimeBar_TimeArea.bmp">
+      <Filter>리소스 파일\GAMEINFO</Filter>
+    </Image>
+    <Image Include="설명 1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="설명 2.bmp">
+      <Filter>리소스 파일\GAMEINFO</Filter>
+    </Image>
+    <Image Include="설명 3.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="설명 4.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="설명 5.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="resource\heart5 (2).bmp">
+      <Filter>리소스 파일\GAMEINFO</Filter>
+    </Image>
+    <Image Include="resource\heart4.bmp">
+      <Filter>리소스 파일\GAMEINFO</Filter>
+    </Image>
+    <Image Include="resource\heart2.bmp">
+      <Filter>리소스 파일\GAMEINFO</Filter>
+    </Image>
+    <Image Include="resource\heart3.bmp">
+      <Filter>리소스 파일\GAMEINFO</Filter>
+    </Image>
+    <Image Include="resource\heart1.bmp">
+      <Filter>리소스 파일\GAMEINFO</Filter>
+    </Image>
+    <Image Include="resource\ghost0.bmp">
+      <Filter>리소스 파일\CHARACTER\GHOST</Filter>
+    </Image>
+    <Image Include="resource\GHOST1.bmp">
+      <Filter>리소스 파일\CHARACTER\GHOST</Filter>
+    </Image>
+    <Image Include="resource\ghost2.bmp">
+      <Filter>리소스 파일\CHARACTER\GHOST</Filter>
+    </Image>
+    <Image Include="resource\설명키.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

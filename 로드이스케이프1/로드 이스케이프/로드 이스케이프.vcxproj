@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{56AB49C9-788C-4162-B39D-E8E19F3E437F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>로드이스케이프</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files (x86)\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\inc;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files (x86)\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files (x86)\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\inc;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files (x86)\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files (x86)\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\inc;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files (x86)\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>msimg32.lib winmm.lib fmod_vc.lib %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;fmod_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>msimg32.lib %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;fmod_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;fmod_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>msimg32.lib winmm.lib fmod_vc.lib %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseLib.h" />
+    <ClInclude Include="GameCharacter.h" />
+    <ClInclude Include="GameSound.h" />
+    <ClInclude Include="GameTime.h" />
+    <ClInclude Include="Game_DataManager.h" />
+    <ClInclude Include="Game_Item.h" />
+    <ClInclude Include="List_bmp.h" />
+    <ClInclude Include="Math.h" />
+    <ClInclude Include="Objects.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Stage_Line.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RoadEscape.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resource\apple.bmp" />
+    <Image Include="Resource\arrow_down.bmp" />
+    <Image Include="Resource\banana.bmp" />
+    <Image Include="Resource\car 리소스 4.bmp" />
+    <Image Include="Resource\car 리소스 4_R.bmp" />
+    <Image Include="Resource\car 리소스2.bmp" />
+    <Image Include="Resource\car 리소스2_R.bmp" />
+    <Image Include="Resource\car 리소스3.bmp" />
+    <Image Include="Resource\car 리소스3_R.bmp" />
+    <Image Include="Resource\car 리소스5.bmp" />
+    <Image Include="Resource\car 리소스5_R.bmp" />
+    <Image Include="Resource\car리소스1.bmp" />
+    <Image Include="Resource\car리소스1_R.bmp" />
+    <Image Include="Resource\cherry.bmp" />
+    <Image Include="resource\ghost0.bmp" />
+    <Image Include="resource\GHOST1.bmp" />
+    <Image Include="resource\ghost2.bmp" />
+    <Image Include="resource\heart1.bmp" />
+    <Image Include="resource\heart2.bmp" />
+    <Image Include="resource\heart3.bmp" />
+    <Image Include="resource\heart4.bmp" />
+    <Image Include="resource\heart5 (2).bmp" />
+    <Image Include="Resource\intro1.bmp" />
+    <Image Include="Resource\spidernet.bmp" />
+    <Image Include="Resource\TimeBar.bmp" />
+    <Image Include="Resource\TimeBar_Background.bmp" />
+    <Image Include="Resource\TimeBar_TimeArea.bmp" />
+    <Image Include="Resource\TuttleFrame0.bmp" />
+    <Image Include="Resource\TuttleFrame0_R.bmp" />
+    <Image Include="Resource\TuttleFrame1.bmp" />
+    <Image Include="Resource\TuttleFrame10.bmp" />
+    <Image Include="Resource\TuttleFrame10_R.bmp" />
+    <Image Include="Resource\TuttleFrame11.bmp" />
+    <Image Include="Resource\TuttleFrame11_R.bmp" />
+    <Image Include="Resource\TuttleFrame1_R.bmp" />
+    <Image Include="Resource\TuttleFrame2.bmp" />
+    <Image Include="Resource\TuttleFrame2_R.bmp" />
+    <Image Include="Resource\TuttleFrame3.bmp" />
+    <Image Include="Resource\TuttleFrame3_R.bmp" />
+    <Image Include="Resource\TuttleFrame4.bmp" />
+    <Image Include="Resource\TuttleFrame4_R.bmp" />
+    <Image Include="Resource\TuttleFrame5.bmp" />
+    <Image Include="Resource\TuttleFrame5_R.bmp" />
+    <Image Include="Resource\TuttleFrame6.bmp" />
+    <Image Include="Resource\TuttleFrame6_R.bmp" />
+    <Image Include="Resource\TuttleFrame7.bmp" />
+    <Image Include="Resource\TuttleFrame7_R.bmp" />
+    <Image Include="Resource\TuttleFrame8.bmp" />
+    <Image Include="Resource\TuttleFrame8_R.bmp" />
+    <Image Include="Resource\개구리 점프 상 1.bmp" />
+    <Image Include="Resource\개구리 점프 상 3.bmp" />
+    <Image Include="Resource\개구리 점프 상2.bmp" />
+    <Image Include="Resource\개구리 점프 우.bmp" />
+    <Image Include="Resource\개구리 점프 좌 1.bmp" />
+    <Image Include="Resource\개구리 점프 좌2.bmp" />
+    <Image Include="Resource\개구리 점프 좌3.bmp" />
+    <Image Include="Resource\개구리 점프 하 3.bmp" />
+    <Image Include="Resource\개구리 점프 하1.bmp" />
+    <Image Include="Resource\개구리 점프 하2.bmp" />
+    <Image Include="Resource\백그라운드 나머지.bmp" />
+    <Image Include="Resource\백그라운드 하늘.bmp" />
+    <Image Include="Resource\사냥꾼.bmp" />
+    <Image Include="resource\설명키.bmp" />
+    <Image Include="Resource\우 점프.bmp" />
+    <Image Include="Resource\점프 하강.bmp" />
+    <Image Include="Resource\통나무_L.bmp" />
+    <Image Include="Resource\통니무.bmp" />
+    <Image Include="설명 1.bmp" />
+    <Image Include="설명 2.bmp" />
+    <Image Include="설명 3.bmp" />
+    <Image Include="설명 4.bmp" />
+    <Image Include="설명 5.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
